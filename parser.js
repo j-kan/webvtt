@@ -3,10 +3,6 @@
 
 // Not intended to be fast, but if you can make it faster, please help out!
 
-define([], function () {
-    'use strict';
-
-
 var WebVTTParser = function() {
   this.parse = function(input, mode) {
     //XXX need global search and replace for \0
@@ -702,10 +698,3 @@ var WebVTTSerializer = function() {
     return result
   }
 }
-
-
-    return {
-        Parser:     WebVTTParser,
-        Serializer: WebVTTSerializer
-    };
-});
